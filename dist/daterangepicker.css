@@ -30,12 +30,6 @@
           box-sizing: initial;
 }
 
-.dp-clearfix {
-  clear: both;
-  height: 0;
-  font-size: 0;
-}
-
 .date-picker-wrapper.inline-wrapper {
   position: relative;
   -webkit-box-shadow: none;
@@ -133,7 +127,8 @@
   float: left;
 }
 
-.date-picker-wrapper .month-wrapper table th, .date-picker-wrapper .month-wrapper table td {
+.date-picker-wrapper .month-wrapper table th,
+.date-picker-wrapper .month-wrapper table td {
   vertical-align: middle;
   text-align: center;
   line-height: 14px;
@@ -150,7 +145,8 @@
   cursor: default;
 }
 
-.date-picker-wrapper .month-wrapper table div.day.lastMonth, .date-picker-wrapper .month-wrapper table div.day.nextMonth {
+.date-picker-wrapper .month-wrapper table div.day.lastMonth,
+.date-picker-wrapper .month-wrapper table div.day.nextMonth {
   color: #999;
   cursor: default;
 }
@@ -170,10 +166,6 @@
   cursor: help !important;
 }
 
-.date-picker-wrapper .month-wrapper table .day.has-tooltip .tooltip {
-  white-space: nowrap;
-}
-
 .date-picker-wrapper .time label {
   white-space: nowrap;
 }
@@ -187,7 +179,8 @@
   background-color: #cdecfa;
 }
 
-.date-picker-wrapper .month-wrapper table .day.nextMonth, .date-picker-wrapper .month-wrapper table .day.lastMonth {
+.date-picker-wrapper .month-wrapper table .day.nextMonth,
+.date-picker-wrapper .month-wrapper table .day.lastMonth {
   display: none;
 }
 
@@ -195,7 +188,8 @@
   background-color: #ffe684;
 }
 
-.date-picker-wrapper .month-wrapper table .day.real-today.checked, .date-picker-wrapper .month-wrapper table .day.real-today.hovering {
+.date-picker-wrapper .month-wrapper table .day.real-today.checked,
+.date-picker-wrapper .month-wrapper table .day.real-today.hovering {
   background-color: #70ccd5;
 }
 
@@ -203,16 +197,14 @@
   height: 40px;
 }
 
-.date-picker-wrapper table .caption > th:first-of-type, .date-picker-wrapper table .caption > th:last-of-type {
-  width: 27px;
-}
-
-.date-picker-wrapper table .caption .next, .date-picker-wrapper table .caption .prev {
+.date-picker-wrapper table .caption .next,
+.date-picker-wrapper table .caption .prev {
   padding: 0 5px;
   cursor: pointer;
 }
 
-.date-picker-wrapper table .caption .next:hover, .date-picker-wrapper table .caption .prev:hover {
+.date-picker-wrapper table .caption .next:hover,
+.date-picker-wrapper table .caption .prev:hover {
   background-color: #ccc;
   color: white;
 }
@@ -301,7 +293,11 @@
   padding: 10px 40px 10px 0;
 }
 
-.date-picker-wrapper .drp_top-bar .error-top, .date-picker-wrapper .drp_top-bar .normal-top {
+.date-picker-wrapper .drp_top-bar .error-top {
+  display: none;
+}
+
+.date-picker-wrapper .drp_top-bar .normal-top {
   display: none;
 }
 
@@ -324,10 +320,6 @@
 
 .date-picker-wrapper .drp_top-bar.normal .normal-top {
   display: block;
-}
-
-.date-picker-wrapper .drp_top-bar.normal .normal-top .selection-top {
-  color: #333;
 }
 
 .date-picker-wrapper .drp_top-bar .apply-btn {
@@ -357,6 +349,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
 }
 
+/*time styling*/
 .date-picker-wrapper .time {
   position: relative;
 }
@@ -373,13 +366,7 @@
   height: 20px;
 }
 
-.date-picker-wrapper .time1 {
-  width: 180px;
-  padding: 0 5px;
-  text-align: center;
-}
-
-/*time styling*/
+.date-picker-wrapper .time1,
 .time2 {
   width: 180px;
   padding: 0 5px;
@@ -394,10 +381,7 @@
   float: right;
 }
 
-.date-picker-wrapper .hour {
-  text-align: right;
-}
-
+.date-picker-wrapper .hour,
 .minute {
   text-align: right;
 }
@@ -406,7 +390,12 @@
   display: none;
 }
 
-.date-picker-wrapper .first-date-selected, .date-picker-wrapper .last-date-selected {
+.date-picker-wrapper .first-date-selected {
+  background-color: #49e !important;
+  color: white !important;
+}
+
+.date-picker-wrapper .last-date-selected {
   background-color: #49e !important;
   color: white !important;
 }
@@ -441,7 +430,8 @@
   bottom: -4px;
 }
 
-.date-picker-wrapper.two-months.no-gap .month1 .next, .date-picker-wrapper.two-months.no-gap .month2 .prev {
+.date-picker-wrapper.two-months.no-gap .month1 .next,
+.date-picker-wrapper.two-months.no-gap .month2 .prev {
   display: none;
 }
 
@@ -455,6 +445,6 @@
 }
 
 .date-picker-wrapper .week-number.week-number-selected {
-  color: #49e;
+  color: #4499EE;
   font-weight: bold;
 }

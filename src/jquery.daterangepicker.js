@@ -980,7 +980,7 @@
 				$(self).data('date-picker-opened',null);
 				box.remove();
 				$(window).unbind('resize.datepicker',calcPosition);
-				$(document).unbind('click.datepicker',closeDatePicker);
+				$(document).unbind('click.datepicker',outsideClickClose);
 			}
 		});
 
@@ -1077,12 +1077,7 @@
 			});
 
 			//if user click other place of the webpage, close date range picker window
-			$(document).bind('click.datepicker',function(evt)
-			{
-				if (!IsOwnDatePickerClicked(evt, self[0])) {
-					if (box.is(':visible')) closeDatePicker();
-				}
-			});
+			$(document).bind('click.datepicker', outsideClickClose);
 
 			box.find('.next').click(function()
 			{
@@ -2657,6 +2652,12 @@
 			showSelectedDays();
 			showGap();
 		}
+
+        function outsideClickClose(evt) {
+            if (!IsOwnDatePickerClicked(evt, self[0])) {
+                if (box.is(':visible')) closeDatePicker();
+            }
+        }
 
 	};
 }));
